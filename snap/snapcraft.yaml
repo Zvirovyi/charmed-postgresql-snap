@@ -93,7 +93,7 @@ apps:
     command: start-patroni.sh
     daemon: simple
     install-mode: disable
-    restart-condition: always
+    restart-condition: never
     environment:
       TCL_LIBRARY: $SNAP/usr/share/tcltk/tcl8.6
       "LD_LIBRARY_PATH": "$LD_LIBRARY_PATH:$SNAP/usr/lib/\
